@@ -1,0 +1,392 @@
+:root {
+	--background-color-body: #282828;
+	--background-color-card: #3E3E3E;
+	--background-color-button: #1C1C1C;
+	
+	--color-text: #FBFBF8;
+	--color-card-text: #5d564f;
+	--color-button-text: #e6dfcc; 
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--background-color-body);
+}
+
+
+
+.pages {
+	margin: 0;
+	padding: 0;
+	color: var(--color-text);
+}
+
+/* navbar */
+#navbar {
+	background-color: #242424;
+  	padding: 1em;
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+}
+
+#navbar nav {
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  	width: 100%;
+}
+
+
+#navbar #logo img {
+  	width: 3em;
+  	height: auto;
+	border-radius: 10em;
+}
+/* Liens de navigation dans la navbar */
+#navlinks {
+	display: flex;
+ 	margin-left: auto; /* Pousse les liens de navigation à droite */	
+}
+
+#navlinks ul {
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	display: flex;
+	font-size: 1em;
+}
+
+#navlinks ul li {
+ 	margin-left: 20px;
+	
+}
+
+#navlinks ul li a {
+  	text-decoration: none;
+  	color: white;
+  	padding: 6px 8px;
+  	transition: background-color 1.3s ease;
+
+}
+
+#navlinks ul li a:hover {
+  	background-color: #575758;
+  	border-radius: 6px;
+}
+
+/* (liens affichés lorsque l'utilisateur n'est pas connecté dans la navbar) */
+#register {
+  	display: flex;
+}
+
+#register ul {
+  	list-style-type: none;
+  	margin: 0;
+ 	padding: 0;
+  	display: flex;
+	font-size: 1em;
+}
+
+#register ul li {
+ 	 margin-left: 30px;
+}
+
+#register ul li a {
+  	text-decoration: none;
+  	color: white;
+  	padding: 6px 10px;
+  	transition: background-color 1.3s ease;
+}
+
+#register ul li a:hover {
+  	background-color: #575758;
+  	border-radius: 6px;
+}
+
+
+
+
+/* Dropdown menu nav bar */
+#dropdown_menu {
+  	position: relative;
+  	margin-left: 20px;
+}
+
+#dropdown_menu_image {
+  	width: 3em;
+  	height: 3em;
+	background-color: #fff;
+  	border-radius: 50%;
+  	cursor: pointer;
+}
+
+#dropdown_toggle {
+  	position: absolute;
+  	opacity: 0;
+  	width: 1px;
+  	height: 1px;
+}
+
+/* Cacher le menu par défaut */
+#dropdown_menu ul {
+  	background-color: var(--background-color-body);
+  	display: none;
+  	position: absolute;
+  	right: 0;
+  	list-style-type: none;
+  	padding: 10px;
+  	margin: 0;
+  	margin-bottom: 2em;
+  	border-radius: 6px;
+  	box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
+  	transform: translateY(2em);
+}
+
+#dropdown_menu ul li {
+  	padding: 6px 0;
+}
+
+#dropdown_menu ul li a,
+#dropdown_menu ul li button {
+  	color: white;
+  	text-decoration: none;
+ 	background: none;
+  	border: none;
+  	cursor: pointer;
+  	padding: 11px 20px;
+  	display: block;
+  	text-align: left;
+}
+
+#dropdown_menu ul li a:hover,
+#dropdown_menu ul li button:hover {
+  	background-color: #575758;
+  	border-radius: 6px;
+}
+
+/* Montrer le menu au clic */
+#dropdown_toggle:checked + label + ul {
+  	display: block;
+}
+
+/* HOMEPAGE */
+
+
+
+#content {
+	width: auto;
+	height: 100%;
+	margin: 1em;
+	padding: 1em;
+	background-color: var(--background-color-card);
+	border-radius: 1em;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	margin-bottom: 2em;
+}
+
+#title {
+	display: flex;
+	justify-content: center;
+	color: var(--color-text);
+	font-size: 3em;
+	font-weight: bold;
+	text-transform: uppercase;	
+	margin: 0.5em 0;
+}
+
+#text-image-container {
+	display: flex;
+	padding: 1em;
+}
+
+#text-container {
+	margin: 1em;
+	height: 40em;
+	widht: 100%;
+	padding: 2em;
+	background-color: #626262;
+}
+
+#text-container p {
+    color: var(--color-text);
+    line-height: 1.6;
+    font-size: 1.1em;
+    font-family: "Georgia", serif;
+    text-align: justify; 
+}
+
+
+#product-link { 
+	display: flex;
+    justify-content: center;
+}
+
+#product-link a {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    font-weight: bold;
+    color: var(--color-text);
+    background-color: var(--background-color-button);
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#product-link a:hover {
+    transform: translateY(-5px); 
+}
+
+
+
+#img-container {
+	margin: 1em;
+	width: 50em; 
+	height: 30em;
+	
+}
+
+#img-container img {
+    width: 70em; 
+    height: 44em;
+}
+
+
+
+/* HOME PAGE HISTORY-BLOCK */
+
+
+#history-block {
+    width: auto;
+    height: 100%;
+    margin: 1em;
+    padding: 1em;
+    background-color: var(--background-color-card);
+    border-radius: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+}
+
+#title-history-block {
+    display: flex;
+    justify-content: center;
+    color: var(--color-text);
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+#text-image-inner-block {
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+}
+
+#image-inner-block {
+	width: 50em; 
+}
+
+
+
+#image-inner-block img {
+    width: 72em; /* Ajuste la largeur selon ton besoin */
+    height: 40em;
+}
+
+.history-text {
+	height: 36em;
+	padding: 2em;
+	background-color: #626262;
+	
+}
+
+
+.history-text p {
+	color: var(--color-text);
+    line-height: 1.6;
+    font-size: 1.1em;
+    font-family: "Georgia", serif;
+    text-align: justify;
+}
+
+
+
+/* product page */
+
+
+#products-content {
+	width: auto;
+	height: 100%;
+	margin: 1em;
+	padding: 1em;
+	background-color: var(--background-color-card);
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	margin-bottom: 2em;
+}
+
+
+#title-products {
+    display: flex;
+    justify-content: center;
+    color: var(--color-text);
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+
+#products-card-content {
+	display: grid;
+    grid-template-columns: repeat(5, 1fr);
+	width: auto;
+	background-color: var(--background-color-body);
+	margin: 0 auto;
+}
+
+#card-products {
+	background-color: #575758;
+    width: 37vh; /* Largeur de la carte en em */
+	height: 37em; /* Hauteur de la carte en em */
+	margin: 10px;
+}
+
+#img-card-content {
+    width: 37vh; /* Correspond à la largeur de #card-products */
+    height: 20em; /* Hauteur de l'image, ajustez selon vos besoins */
+    overflow: hidden; /* Masque tout débordement éventuel */
+}
+
+#img-card-content img {
+    width: 23em; /* Largeur fixe en em pour remplir le conteneur */
+    height: 20em; /* Hauteur fixe en em pour remplir le conteneur */
+    object-fit: cover; /* Remplit tout l'espace sans distorsion */
+}
+
+#title-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--color-text);
+
+}
+
+#description-card-content {
+	color:var(--color-text);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+#information-product {
+	margin: 1em;
+	color:var(--color-text);
+	display: flex;
+	justify-content: space-between;
+}
+
