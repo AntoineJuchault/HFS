@@ -1,14 +1,16 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}A La miellerie{% endblock %}
+{% block title %}Acceuil{% endblock %}
 
 {% block body %}
 <div id='page'>
-    <div id='content'>
-        <h1 id='title'>Bienvenue à la miellerie</h1>
-        
+	<div id='img-title'>
+		<h1 id='title'>Bienvenue à la miellerie</h1>
+	</div>
+    <div id='content'> 
         <div id='text-image-container'>
             <div id='text-container'>
+			<h2 id='product-title'>Nos produits, une production local</h2>
                 <p>
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br>
                     accusantium doloremque laudantium, totam rem aperiam, eaque ipsa <br>
@@ -36,17 +38,18 @@
     </div>
 
     <div id='history-block'>
-        <h2 id='title-history-block'> Notre Histoire </h2>
+        
         
 		<div class='history-content'>
 
             <div id='text-image-inner-block'>
 				
 				<div id='image-inner-block'>
-					<img src="images/lavande.jpg" alt='image'>    
+					<img src='images/lavande.jpg' alt='image'>    
 				</div>
                 
 				<div class='history-text'>
+					<h2 id='title-history'> Notre Histoire </h2>
                     <p>
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br>
                         accusantium doloremque laudantium, totam rem aperiam, eaque ipsa <br>

@@ -172,19 +172,14 @@ body {
 }
 
 /* HOMEPAGE */
-
-
-
-#content {
-	width: auto;
-	height: 100%;
-	margin: 1em;
-	padding: 1em;
-	background-color: var(--background-color-card);
-	border-radius: 1em;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-	margin-bottom: 2em;
+#img-title {
+	background-image: url('');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	
 }
+
 
 #title {
 	display: flex;
@@ -196,6 +191,18 @@ body {
 	margin: 0.5em 0;
 }
 
+
+
+#content {
+	width: auto;
+	height: 100%;
+	margin: 1em;
+	padding: 1em;
+	background-color: var(--background-color-card);
+	border-radius: 0.5em;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	margin-bottom: 2em;
+}
 #text-image-container {
 	display: flex;
 	padding: 1em;
@@ -215,6 +222,13 @@ body {
     font-size: 1.1em;
     font-family: "Georgia", serif;
     text-align: justify; 
+}
+
+#product-title {
+	color: var(--color-text);
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1em 0;
 }
 
 
@@ -251,6 +265,9 @@ body {
 #img-container img {
     width: 70em; 
     height: 44em;
+	border-radius: 0.5em;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+
 }
 
 
@@ -264,20 +281,12 @@ body {
     margin: 1em;
     padding: 1em;
     background-color: var(--background-color-card);
-    border-radius: 1em;
+    border-radius: 0.5em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 2em;
 }
 
-#title-history-block {
-    display: flex;
-    justify-content: center;
-    color: var(--color-text);
-    font-size: 3em;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0.5em 0;
-}
+
 
 #text-image-inner-block {
 	display: flex;
@@ -294,6 +303,14 @@ body {
 #image-inner-block img {
     width: 72em; /* Ajuste la largeur selon ton besoin */
     height: 40em;
+	border-radius: 0.5em;
+}
+
+#title-history {
+    color: var(--color-text);
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1em 0;
 }
 
 .history-text {
@@ -389,4 +406,41 @@ body {
 	display: flex;
 	justify-content: space-between;
 }
+
+
+
+/* formulaire */
+
+#register-title {
+	display: flex;
+	justify-content: center;
+	aligns-items: center;
+	color: var(--color-text);
+	font-size: 2em;
+}
+.form-container {
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	margin: 0 auto;
+	padding: 25px 30px;
+	background-color: #fff;
+	border-radius: 0.5em;
+}
+
+#form-content {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 2em;
+	width: 100%;
+	max-widht: 30em;
+}
+
+.label {
+	font-size: 1.2em;
+
+}
+
+
+
 
